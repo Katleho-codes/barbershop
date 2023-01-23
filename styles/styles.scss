@@ -1,0 +1,175 @@
+@import "./footer";
+@import "./navbar";
+@import "./sidebar";
+@import "./team";
+@import "./contact";
+@import "./about";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Colors
+
+:root {
+    --MainColor: #082032;
+    --AccentColor: #ff4c29;
+    --Grey: #d2d2d2;
+}
+
+html {
+    --scrollbarBG: var(--Grey);
+    --thumbBG: #90A4AE;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home_container {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    // height: calc(100vh - 5rem);
+    flex-direction: column;
+    text-align: center;
+    // gap: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+main {
+    position: relative;
+    top: 70px;
+}
+
+.home {
+
+    .site_title {
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+            top: 0;
+            margin: 0;
+            font-weight: 700;
+            color: var(--MainColor);
+            text-align: center;
+
+            span {
+                color: var(--AccentColor);
+                text-decoration: underline;
+                font-weight: 900;
+            }
+        }
+
+    }
+
+    form {
+        display: inline;
+        margin-bottom: 2rem;
+
+        h3 {
+            font-size: 1.1rem;
+            text-align: center;
+            color: var(--MainColor);
+            font-weight: 500;
+            margin: 1.2rem auto;
+        }
+
+        input {
+            width: auto;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid var(--Grey);
+            outline: none;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            font-family: inherit;
+        }
+
+        ::placeholder {
+            font-family: inherit;
+            color: var((--MainColor));
+            font-weight: 500;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: var(--AccentColor);
+            color: white;
+            font-weight: 500;
+            font-family: inherit;
+            margin-left: 0;
+            padding: 12px 20px;
+            border: 1px solid var(--AccentColor);
+            border-radius: 5px;
+
+            &:hover {
+                opacity: .9;
+                transition: .2s ease;
+            }
+        }
+    }
+}
+
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width:800px) {
+    .home {
+        .site_title {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .cards {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

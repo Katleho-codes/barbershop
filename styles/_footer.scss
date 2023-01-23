@@ -1,0 +1,102 @@
+footer {
+    background-color: var(--Blue);
+    padding: 1rem;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+
+    section.footer_row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .footer_col {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .footer_title {
+                color: white;
+            }
+
+            .logo {
+                width: 3rem;
+                height: 3rem;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: .4rem;
+                justify-content: last baseline;
+                margin-top: auto;
+
+                svg {
+                    fill: white;
+                    width: 1.3rem;
+                    height: auto;
+
+                    &:active,
+                    &:hover {
+                        fill: var(--Blue);
+                    }
+                }
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                margin: .6rem 0;
+
+                &:active,
+                &:hover {
+                    color: #6c757d;
+                }
+            }
+        }
+
+    }
+
+    section.copyright-row {
+        p {
+            color: #eee;
+            font-weight: 500;
+        }
+    }
+}
+
+
+@media (max-width:800px) {
+    footer {
+        section.footer_row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+
+            .footer_col {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                .socials {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        section.copyright-row {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

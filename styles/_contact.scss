@@ -1,0 +1,117 @@
+.contact {
+    .site_title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+            top: 0;
+            margin-top: 3rem;
+            font-weight: 700;
+            color: var(--MainColor);
+            text-align: center;
+        }
+    }
+
+    .row {
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // gap: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        .left_col {
+            h2 {
+                color: var(--MainColor);
+                font-weight: 500;
+                text-align: center;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+
+                span {
+                    svg {
+                        fill: var(--AccentColor);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--MainColor);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .right_col {
+            padding-bottom: 3rem;
+
+            h2 {
+                color: var(--MainColor);
+                font-weight: 500;
+                text-align: center;
+            }
+
+            label {
+                font-weight: 500;
+                color: var(--MainColor);
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=datetime-local] {
+                width: 100%;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border-radius: 4px;
+                outline: none;
+                border: 2px solid #eee;
+                font-family: inherit;
+            }
+
+            input[type=text]:focus,
+            input[type=email]:focus {
+                border: 3px solid var(--AccentColor);
+                transition: .2s ease;
+            }
+
+            select {
+                width: 100%;
+                padding: 16px 20px;
+                border: 2px solid #eee;
+                border-radius: 4px;
+                outline: none;
+                cursor: pointer;
+                margin-top: .6rem;
+            }
+
+            .btn {
+                cursor: pointer;
+                background-color: var(--AccentColor);
+                color: white;
+                font-weight: 500;
+                font-family: inherit;
+                margin-left: 0;
+                padding: 12px 20px;
+                border: 1px solid var(--AccentColor);
+                border-radius: 5px;
+                width: 100%;
+                margin-top: 1rem;
+
+                &:hover {
+                    opacity: .9;
+                    transition: .2s ease;
+                }
+            }
+        }
+    }
+}
