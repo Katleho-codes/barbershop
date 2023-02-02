@@ -1,9 +1,13 @@
 import Navigation from "../components/Navigation";
 import { about_cards } from "../../public/data/about_cards";
+import Head from "next/head";
 
 function About() {
   return (
     <>
+      <Head>
+        <title>About</title>
+      </Head>
       <Navigation />
       <main className="about">
         <div className="container">

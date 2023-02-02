@@ -3,13 +3,16 @@ import { teamMembers } from "../../public/data/team";
 import Image from "next/image";
 import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
+import Footer from "../components/Footer";
+import Head from "next/head";
 
 function Team() {
   const router = useRouter();
-
-  const { id } = router.query;
   return (
     <>
+      <Head>
+        <title>Team</title>
+      </Head>
       <Navigation />
       <main className="team">
         <div className="container">
@@ -27,12 +30,7 @@ function Team() {
 
           <section className="team_cards">
             {teamMembers.map((item) => (
-              <article
-                key={item.id}
-                onClick={() => {
-                  router.push("/team/profile?id=" + item.id);
-                }}
-              >
+              <article key={item.id}>
                 <Image placeholder="blur" src={item.src} alt={item.member} />
                 <h3>{item.member}</h3>
                 <p>{item.position}</p>
@@ -41,6 +39,7 @@ function Team() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

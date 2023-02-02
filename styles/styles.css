@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--Blue);
+  background-color: var(--MainColor);
   padding: 1rem;
   position: static;
   left: 0;
@@ -20,11 +20,6 @@ footer section.footer_row .footer_col {
 footer section.footer_row .footer_col .footer_title {
   color: white;
 }
-footer section.footer_row .footer_col .logo {
-  width: 3rem;
-  height: 3rem;
-  overflow: hidden;
-}
 footer section.footer_row .footer_col .logo img {
   width: 100%;
   height: auto;
@@ -41,7 +36,7 @@ footer section.footer_row .footer_col .socials svg {
   height: auto;
 }
 footer section.footer_row .footer_col .socials svg:active, footer section.footer_row .footer_col .socials svg:hover {
-  fill: var(--Blue);
+  fill: var(--MainColor);
 }
 footer section.footer_row .footer_col a {
   color: white;
@@ -486,6 +481,64 @@ footer section.copyright-row p {
     height: 100%;
   }
 }
+.careers {
+  padding-bottom: 3rem;
+}
+.careers .site_title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.careers .site_title h1 {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  top: 0;
+  margin-top: 3rem;
+  font-weight: 700;
+  color: var(--MainColor);
+  text-align: left;
+}
+.careers .site_title p {
+  text-align: left;
+  font-weight: 500;
+}
+.careers section article {
+  border-bottom: 2px solid #eee;
+  padding: 1rem 0;
+}
+.careers section article h2 {
+  color: var(--MainColor);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.careers section article .apply_btn {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--AccentColor);
+  color: white;
+  font-weight: 500;
+  font-family: inherit;
+  margin-left: 0;
+  padding: 12px 20px;
+  border: 1px solid var(--AccentColor);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.careers section article .apply_btn:hover {
+  opacity: 0.9;
+  transition: 0.2s ease;
+}
+.careers section article p {
+  color: var(--MainColor);
+}
+.careers section article .typeOfJob {
+  color: var(--MainColor);
+  font-weight: 600;
+}
+
 *,
 *::before,
 *::after {

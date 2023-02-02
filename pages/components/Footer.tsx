@@ -10,9 +10,6 @@ function Footer() {
         <div className="container">
           <section className="footer_row">
             <div className="footer_col">
-              <Link href="/" className="logo">
-                John's Barbershop
-              </Link>
               <div className="socials">
                 <Link href="/">
                   {" "}
@@ -95,8 +92,7 @@ function Footer() {
           </section>
           <section className="copyright-row">
             <p>
-              &copy; Jubilee Harvest International{" "}
-              <span>{date.getFullYear()}</span>
+              &copy; John&apos;s Barbershop <span>{date.getFullYear()}</span>
             </p>
           </section>
         </div>

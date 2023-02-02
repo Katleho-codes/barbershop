@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import { images } from "../public/data/home_cards";
 import Image from "next/image";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -59,6 +60,7 @@ export default function Home() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

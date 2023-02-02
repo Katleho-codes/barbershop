@@ -1,7 +1,14 @@
+import Head from "next/head";
 import React from "react";
 
 function Gallery() {
-  return <div></div>;
+  return (
+    <>
+      <Head>
+        <title>Gallery</title>
+      </Head>
+    </>
+  );
 }
 
 export default Gallery;

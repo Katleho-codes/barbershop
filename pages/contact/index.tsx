@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+import Head from "next/head";
+import Footer from "../components/Footer";
 
 function Contact() {
   return (
     <>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <Navigation />
       <main className="contact">
         <div className="container">
@@ -203,6 +208,7 @@ function Contact() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
