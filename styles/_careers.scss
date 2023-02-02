@@ -1,0 +1,70 @@
+.careers {
+    padding-bottom: 3rem;
+
+    .site_title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+            top: 0;
+            margin-top: 3rem;
+            font-weight: 700;
+            color: var(--MainColor);
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+            font-weight: 500;
+        }
+    }
+
+
+    section {
+        article {
+            border-bottom: 2px solid #eee;
+            padding: 1rem 0;
+
+            h2 {
+                color: var(--MainColor);
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+                gap: 1rem;
+            }
+
+            .apply_btn {
+                text-decoration: none;
+                cursor: pointer;
+                background-color: var(--AccentColor);
+                color: white;
+                font-weight: 500;
+                font-family: inherit;
+                margin-left: 0;
+                padding: 12px 20px;
+                border: 1px solid var(--AccentColor);
+                border-radius: 5px;
+                font-size: 1rem;
+
+                &:hover {
+                    opacity: .9;
+                    transition: .2s ease;
+                }
+            }
+
+            p {
+                color: var(--MainColor);
+
+            }
+
+            .typeOfJob {
+                color: var(--MainColor);
+                font-weight: 600;
+            }
+        }
+    }
+}
